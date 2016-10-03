@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+  
+}
+
+.jumbotron{
+  background: url(../images/responsive.png) no-repeat;
+}
+
+footer {
+  background: lightgrey;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  overflow: auto;
+}
