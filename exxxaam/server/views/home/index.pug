@@ -1,0 +1,8 @@
+extends ../shared/layout
+block main-content
+  h1 Tweets
+  h2= count 
+  ul
+    each tweet,i in tweets
+      li= tweet.message 
+  

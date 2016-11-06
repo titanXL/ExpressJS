@@ -1,0 +1,8 @@
+extends ../shared/layout
+block main-content
+  form(method='post' action='/tweet')
+    label() Tweet
+    br
+    textarea(id='textarea' name='textarea')
+    br
+    input(type='submit' value='Tweet')
