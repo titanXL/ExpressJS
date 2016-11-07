@@ -9,6 +9,7 @@ module.exports = {
   },
   deletetweet: (req, res) => {
   },
+  //Search user, then get his tweets!
   showtweets: (req, res) => {
     let username = req.params.username
     Tweet.find({author: username}).sort({date: 'desc'}).limit(100).then(tweets => {
