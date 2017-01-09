@@ -2,6 +2,12 @@ const controllers = require('../controllers')
 const auth = require('../config/auth')
 
 module.exports = (app) => {
+  app.all('/', function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', 'X-Requested-With')
+    next()
+  })
+
   app.get('/', controllers.home.index)
   app.get('/about', controllers.home.about)
 
